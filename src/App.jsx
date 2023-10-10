@@ -1,14 +1,17 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+import { Task } from './Components/Task/Task'
 
 function App() {
 
+const task = {
+  id: 0,
+  description: "Descargar el proyecto",
+  isCompleted: true
+}
 
   return (
     <>
-      <div>React</div>
+      <Task task = {task}/>
      
     </>
   )
